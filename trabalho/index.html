@@ -7,13 +7,16 @@
     <title>
         Lamar.
     </title>
+    <!-- icone do titulo -->
     <link rel="shortcut icon" href="img/currency-dollar.svg" type="image/x-icon">
+    <!-- JavaScript -->
+    <script src="script.js"></script>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm bg-dark">
+    <nav class="navbar navbar-expand-sm bg-dark fixed-top">
         <div class="container-fluid">
         <ul class="nav navbar">
             <li class="nav-item">
@@ -26,15 +29,18 @@
                 YOUTUBE
             </a>
             </li>
+                <li class="nav-item">
+                    <a href="#home" class="navlink text-white active">HOME</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ÁLBUNS
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Mr Morale and The Big Steppers.</a></li>
-                      <li><a class="dropdown-item" href="#">DAMN.</a></li>
-                      <li><a class="dropdown-item" href="#">good kid, m.A.A.d city</a></li>
-                      <li><a class="dropdown-item" href="#">To Pimp a Butterfly</a></li>
+                      <li><a class="dropdown-item" href="#mr-morale">Mr Morale and The Big Steppers.</a></li>
+                      <li><a class="dropdown-item" href="#damn">DAMN.</a></li>
+                      <li><a class="dropdown-item" href="#good-kid">good kid, m.A.A.d city</a></li>
+                      <li><a class="dropdown-item" href="#to-pimp-a-butterfly">To Pimp a Butterfly</a></li>
                       <li><a class="dropdown-item" href="#section.80">section.80</a></li>
                       <li><a class="dropdown-item" href="#overly-dedicated">Overly Dedicated</a></li>
                     </ul>
@@ -42,7 +48,9 @@
         </ul>
     </div>          
     </nav>
-    <div class="container-fluid my-5">
+    <main>
+        <!-- Apresentação do tema e inicio do artigo -->
+    <div class="container-fluid my-5 p-5" id="home">
         <div class="row my-2 p-0">
     <div class="col-3">
         <p class="h2 text-dark text-center">Quem é Kendrick Lamar?</p>
@@ -56,23 +64,55 @@
     </div>
     <img src="img/banner.jpg" class="rounded-3 col-9 img-fluid" alt="Imagem do Kendrick Lamar">
 </div>
-</div>   
-<div class="container-fluid bg-dark p-3" id="overly-dedicated">
+</div>
+    <!-- apresentação do Overly Dedicated -->
+<div class="container-fluid bg-dark p-4" id="overly-dedicated">
     <div class="row">
     <div class="row">
     <p class="h3 text-center text-light">Overly Dedicated</p>
     <p class="text-white col-6 fs-3">Overly Dedicated é a quarta mixtape solo do rapper americano Kendrick Lamar, lançada em 14 de setembro de 2010, via Top Dawg Entertainment. O álbum conta com participações especiais de Dash Snow, Jhené Aiko, Schoolboy Q, Ab-Soul, Ash Riser, Dom Kennedy e Murs, entre outros.One of hip hop's most prominent current figures, Kendrick Lamar released this very good project. At the time, Kendrick really hadn't fully discovered his style, so he doesn't sound as energetic as he would later.
 
         Regardless of that, Kendrick Lamar made himself known as an interesting character. One with dope lyrics, and a unique delivery that distinguishes him from anyone else in hip hop. There are a few fantastic songs, such as "The Heart Pt. 2", which was evident that Kendrick had took a lot of time in writing this song. His emotion here makes this the best song easily. The beats on this album are pretty abstract, and they have a unique sound to them.</p>
-    <img src="img/overly-tacklist.ashx" class="col-6" alt="">    
+    <img src="img/overlyde.webp" class="col-6" alt="">    
 </div>
 </div>
 </div>
+<!-- apresentação do section.80 -->
 <div class="container-fluid bg-success rounded-3 p-3" id="section.80">
 <div class="row">
 <p class="h3 text-center text-light">section.80</p>
 <p class="text-white col-6 fs-3">Kendrick Lamar is a weird kid, and rap music could always use more weird kids. The 24-year-old is a Compton native with a budding and mysterious Dr. Dre connection, but there's little-to-no link to his hometown's gangsta-funk legacy in his music. Instead, Lamar is very much a product of the late blog-rap era-- an introverted loner type who's willing to talk tough but is more interested in taking a Mag-Lite to his own personal failings and what he sees as the flaws of his generation. His rap style is fluid and melodic but approachable, and his frantic tumble of syllables evokes the feeling when you're high enough that your thoughts arrive fast and interrupt each other. If one of the Bone Thugs guys had a dorky, overly sincere younger cousin who was really into Afrobeat and Terrence Malick movies, it'd be Kendrick.</p>
-<img src="img/section.80-cover.webp" class="col-6 rouded-3" alt="Capa do album section.80">
+<img src="img/section.80-spotify.jpeg" class="col-6 rouded-3" alt="Capa do album section.80">
+</div>
+</div>
+<div class="container-fluid bg-light p-5" id="to-pimp-a-butterfly">
+    <p class="h2 text-center text-dark">
+        To Pimp A Butterfly
+    </p>
+    <div class="row">
+    <p class="col-6 fs-3">Kendrick Lamar’s major-label albums play out like Spike Lee films in miniature. In both artists’ worlds, the stakes are unbearably high, the characters’ motives are unclear, and morality is knotty, but there is a central force you can feel steering every moment. The "Good and Bad Hair" musical routine from Lee’s 1988 feature School Daze depicted black women grappling with colorism and exclusionary standards of American beauty. Mookie’s climactic window smash in 1989’s Do the Right Thing plunged its characters into fiery bedlam, quietly prophesying the coming L.A. riots in the process. In these moments, you could feel the director speaking to you directly through his characters and their trajectories. Lamar’s records, while crowded with conflicting ideas and arguing voices, have a similar sense of a guiding hand at work.</p>
+    <img src="img/tpab.jpg" alt="To pimp a butterfly album cover" class="col-6">
+</div>
+</div>
+<div class="container-fluid p-5" id="good-kid">
+<p class="h2 text-center text-dark p-1">good kid,m.A.A.d city</p>
+<div class="row">
+<p class="text-dark fs-3 col-6">The first sound we hear on good kid, m.A.A.d. city is a prayer: "Thank you, Lord Jesus, for saving us with your precious blood," voices murmur, evoking a family dinner gathering. The album's cover art, a grubby Polaroid, provides a visual prompt for the scene: Baby Kendrick dangles off an uncle's knee in front of a squat kitchen table displaying a 40-ounce and Lamar's baby bottle. The snapshot is such an unvarnished peek into the rapper's inner life that staring at it for too long feels almost invasive. This autobiographical intensity is the album's calling card. Listening to it feels like walking directly into Lamar's childhood home and, for the next hour, growing up alongside him.</p>
+<img src="img/good-kid.webp" alt="" class="col-6">
+</div>
+</div>
+<div class="container-fluid bg-danger p-5" id="damn">
+    <p class="h2 text-center text-light">DAMN.</p>
+    <div class="row">
+        <p class="col-6 fs-3 text-light">Life is one funny motherfucker, it’s true. “DUCKWORTH.,” the last song on Kendrick Lamar's fourth studio album DAMN., tells a winding story about Anthony from Compton and Ducky from Chicago, whose paths cross first over KFC biscuits, and again, 20 years later, when Ducky’s son records a song about the encounter for Anthony’s record label. It’s a precious origin story, the stuff of rock docs and hood DVDs, and it’s delivered with such precision, vivid detail, and masterful pacing that it can’t possibly be true. But it’s a tale too strange to be fiction, and too powerful not to believe in—just like its author. Kendrick Lamar has proven he’s a master storyteller, but he’s been saving his best plot twist this whole time, waiting until he was ready, or able, to pull it off.</p>
+        <img src="img/damn-highquality.webp" alt="" class="col-6 img-fluid rounded-3">
+    </div>
+</div>
+<div class="container-fluid p-4" id="mr-morale">
+    <p class="h2 text-center">Mr Morale And The Big Steppers</p>
+    <div class="row">
+    <p class="fs-4 col-6">Kendrick Lamar is a giddy dramatist. He loves to pack his music with perspectives, personifying his many characters and muses with distinct voices, cadences, and beat switches that bring them to life. Those virtuosic tics have made him one of rap’s most celebrated storytellers and stylists; he is the first and only rapper to have won a Pulitzer Prize. For some, Kendrick’s elastic narration and indignant dispatches on Black life have made him a figure of supreme moral authority in hip-hop—a role he spurns on his fifth studio album. Kendrick spends Mr. Morale & The Big Steppers gleefully immolating his cherished reputation, swinging between caustic taunts and plaintive confessions over slick funk and soul production that gleams like shards of a mirror. The double album offers rap’s most jarring heel turn since Future cut loose on Monster, taking an unfocused but probing look at Kendrick’s most elusive character: himself.</p>
+    <img src="img/kendrick-lamar-mr-morale-and-the-big-steppers-album-cover.jpeg" alt="" class="col-6">
 </div>
 </div>
 
@@ -80,7 +120,7 @@
 
 
 
-
+</main>
 <!-- BOOTSTRAP.JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
